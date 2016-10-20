@@ -1,2 +1,2 @@
 # vacation
-vacation website
+vacation site
