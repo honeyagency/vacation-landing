@@ -148,7 +148,10 @@ p {
 
 .section--hero-content {
   background-image: url("../backgroundimgae.jpg");
-  height: 20em; }
+  height: 20em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
   @media screen and (min-width: 768px) {
     .section--hero-content {
       height: 60vh; } }
@@ -157,13 +160,13 @@ p {
       height: 75vh; } }
   .section--hero-content .icon-logo {
     max-width: 90%;
-    width: 250px; }
+    width: 200px; }
+    @media screen and (min-width: 480px) {
+      .section--hero-content .icon-logo {
+        width: 250px; } }
     @media screen and (min-width: 768px) {
       .section--hero-content .icon-logo {
-        width: 400px; } }
-    @media screen and (min-width: 992px) {
-      .section--hero-content .icon-logo {
-        width: 600px; } }
+        width: 320px; } }
 
 @media screen and (min-width: 768px) {
   .befirst {
@@ -172,10 +175,13 @@ p {
 @media screen and (max-width: 767px) {
   .befirst {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 34px;
     display: block; } }
 
 #mc_embed_signup {
+  position: relative; }
+
+#mc_embed_signup_scroll {
   position: relative; }
 
 form#mc-embedded-subscribe-form {

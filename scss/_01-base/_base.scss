@@ -1,6 +1,9 @@
 .section--hero-content {
     background-image: url("../backgroundimgae.jpg");
     height: 20em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     @include media($screen-sm) {
         height: 60vh;
@@ -14,16 +17,19 @@
 
     .icon-logo {
         max-width: 90%;
-        width: 250px;
+        width: 200px;
+
+        @include media($screen-xs) {
+            width: 250px;
+        }
+
 
         @include media($screen-sm) {
-            width: 400px;
+            width: 320px;
         }
 
 
-        @include media($screen-md) {
-            width: 600px;
-        }
+        @include media($screen-md) {}
     }
 }
 
@@ -34,13 +40,17 @@
 
 
     @include media($max-sm) {
-    	width: 100%;
-        margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: 34px;
         display: block;
     }
 }
 
 #mc_embed_signup {
+    position: relative;
+}
+
+#mc_embed_signup_scroll {
     position: relative;
 }
 
